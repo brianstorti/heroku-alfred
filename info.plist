@@ -113,7 +113,7 @@
 				<key>runningsubtext</key>
 				<string>Fetching results</string>
 				<key>script</key>
-				<string>ruby heroku.rb "{query}" </string>
+				<string>./heroku.sh "{query}" </string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
 				<key>scriptfile</key>
@@ -142,7 +142,7 @@
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>script</key>
-				<string>./heroku.rb --refresh</string>
+				<string>./heroku.sh --refresh</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
