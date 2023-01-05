@@ -5,8 +5,10 @@ set -Eeuo pipefail
 query="$1"
 cache_file=".appscache"
 
+heroku_path="$(which heroku)"
+
 update_apps_list() {
-  /usr/local/bin/heroku apps --all | \
+  $heroku_path apps --all | \
     grep -v '===' | \
     awk '{print $1}' | \
     awk NF > $cache_file
