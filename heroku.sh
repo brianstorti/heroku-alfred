@@ -2,9 +2,10 @@
 
 set -Eeuo pipefail
 
+PATH="$PATH:/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+
 query="$1"
 cache_file=".appscache"
-
 heroku_path="$(which heroku)"
 
 update_apps_list() {
